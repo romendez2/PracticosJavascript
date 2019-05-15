@@ -1,0 +1,14 @@
+{
+    "name": "Practico_02",
+    "version": "1.0.0",
+    "keywords": [
+        "util",
+        "functional",
+        "server",
+        "client",
+        "browser"
+    ],
+    "author": "RO",
+    "contributors": [],
+    "dependencies": {}
+}
