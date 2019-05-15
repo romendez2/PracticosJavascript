@@ -9,7 +9,7 @@ $("#btnVer").click(verProducto);
         for(i = 1; i <= numero2; i++){
             resultado = resultado + numero1;
             
-            
+            //ejemplo
         }
         $("#pVer").html(resultado + "<br>");
             $("#btnVer").attr("disabled", "disabled");
