@@ -87,8 +87,7 @@ _exponente--;
 
 //9
 function numeroPositivo(_dias, _horas){
-    var _dias;
-    var _horas;
+
     var positivo;
     if(_dias < 0 || _horas < 0){
         positivo = false;
@@ -98,9 +97,7 @@ function numeroPositivo(_dias, _horas){
 }
 
 function calcTotalHoras(_dias,_horasTrabajo,_tipoAsistente){
-    var _dias;
-    var _horasTrabajo;
-    var _tipoAsistente;
+
     var precio = 0;
     var totalSalario = 0;
     
@@ -118,6 +115,58 @@ function valorTotalGastos(_precioMateriales){
     precioTotalGastos = _precioMateriales * 1.10;
     return precioTotalGastos;
 }
+
+//Practico 05
+//1
+function invertirTexto(_txtOrig){
+    var _txtInv = "";
+    for (var i = _txtOrig.length - 1; i >= 0; i--) {
+        _txtInv += _txtOrig.charAt(i);
+    }
+    return _txtInv;
+}
+//2
+function contarVeces(_texto, _letra){
+    var _texto;
+    var _letra;
+    var contadorLetras = 0;
+    for (var i = 0; i < _texto.length; i++) {
+        if(_texto.charAt(i) === _letra){
+            contadorLetras++;
+        } 
+    }return contadorLetras;
+}
+//3
+function contarVocales(_texto){
+
+    var x;
+    var contadorLetras = 0;
+
+    for (var i = 0; i < _texto.length; i++) {
+       x  = _texto.charAt(i)
+        if(x === "a" || x === "e" || x === "i" || x === "o" || x === "u"){
+            contadorLetras++;
+        }
+    }return contadorLetras;
+}
+//console.log(pasarMinuscula('IJKJMjjjIJJJ'));
+//4
+function pasarMinuscula(_texto){
+    minuscula = _texto.toLowerCase();
+    return minuscula;
+}
+//5
+function pasarMayuscula(_texto){
+    mayuscula = _texto.toUpperCase();
+    return mayuscula;
+}
+//6
+function encontrarSubcadena(_texto1, _texto2){
+    var es = _texto1.indexOF(_texto2);
+    return es;
+}
+
+
 
 
 
